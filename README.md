@@ -42,7 +42,7 @@ variable "service_name" {
 Create the Kubernetes clusters and for each apply a deployment a service and when the load balancer is created, curl the app:
 
 ```
-./scripts/script.sh
+./scripts/create.sh
 ```
 
 Output are writted in `logs` file.
