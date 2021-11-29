@@ -2,4 +2,4 @@
 
 terraform destroy -auto-approve
 
-> logs
+> ../logs

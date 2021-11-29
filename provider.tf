@@ -5,7 +5,6 @@ provider "ovh" {
   application_key    = "xxx"
   application_secret = "xxx"
   consumer_key       = "xxx"
-  # timeout            = "30m"
 }
 
 provider "local" {}
