@@ -1,5 +1,5 @@
 variable "service_name" {
-  default = "a212a1e43b614c4ba27a247b890fcf59"
+  default = "xxx"
 }
 
 variable "nb_cluster" {
