@@ -18,8 +18,7 @@ resource "ovh_cloud_project_kube_nodepool" "node_pool" {
   min_nodes     = 3
 }
 
-resource "local_file" "kubeconfig" {
-    count       = var.nb_cluster
-    content     = ovh_cloud_project_kube.my_kube_cluster[count.index].kubeconfig
-    filename = "my-kube-cluster-${count.index}.yml"
+output "kubeconfig_file" {
+  value     = ovh_cloud_project_kube.my_kube_cluster.kubeconfig
+  sensitive = true
 }
